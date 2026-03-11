@@ -1,0 +1,22 @@
+# python
+__pycache__/
+*.pyc
+
+# venv
+.venv/
+
+# datasets
+train_dataset/
+clean_dataset/
+sound_src/
+sound_src_with_noise/
+sound_src_train_clean/
+
+# generated data
+precomputed/
+checkpoints/
+
+# numpy / models
+*.npy
+*.pth
+*.pt

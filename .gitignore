@@ -1,0 +1,33 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# datasets
+train_dataset/
+val_dataset/
+test_dataset/
+clean_dataset/
+
+# audio
+sound_src/
+sound_src_with_noise/
+sound_src_train_clean/
+sound_src_val_clean/
+sound_src_test_with_noise_*/
+
+# raw data
+libri_light_20h_raw/
+noise/
+rir/
+
+# generated
+precomputed/
+checkpoints/
+
+# logs
+log.txt
+log_*.txt
+
+# numpy
+*.npy

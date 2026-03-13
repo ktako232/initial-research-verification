@@ -30,4 +30,6 @@ log.txt
 log_*.txt
 
 # numpy
-*.npy
+*.npy20251203-RoomB-20260311T182919Z-3-001/
+20251203-RoomB-20260311T182919Z-3-002/
+sound_src_test_clean/

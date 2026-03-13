@@ -14,12 +14,15 @@ sound_src/
 sound_src_with_noise/
 sound_src_train_clean/
 sound_src_val_clean/
+sound_src_test_clean/
 sound_src_test_with_noise_*/
 
 # raw data
 libri_light_20h_raw/
 noise/
 rir/
+20251203-RoomB-20260311T182919Z-3-001/
+20251203-RoomB-20260311T182919Z-3-002/
 
 # generated
 precomputed/
@@ -30,6 +33,4 @@ log.txt
 log_*.txt
 
 # numpy
-*.npy20251203-RoomB-20260311T182919Z-3-001/
-20251203-RoomB-20260311T182919Z-3-002/
-sound_src_test_clean/
+*.npy

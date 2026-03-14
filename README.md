@@ -53,3 +53,47 @@ source ~/.bash_profile
 ```bash
 alias ls
 ```
+
+## tmux（ターミナルセッション管理）
+
+### 目的
+
+リモートサーバーで長時間の処理（学習など）を実行する際、  
+SSH接続が切れても処理が止まらないようにするために tmux を使用する。
+
+### インストール
+
+```bash
+sudo apt update
+sudo apt install tmux
+```
+
+### 新しいセッションを開始
+
+```bash
+tmux
+```
+
+### セッションから離れる（処理は継続）
+
+```
+Ctrl + b → d
+```
+
+### セッション一覧
+
+```bash
+tmux ls
+```
+
+### セッションに再接続
+
+```bash
+tmux a -t 0
+```
+
+### セッション終了
+
+```bash
+exit
+```

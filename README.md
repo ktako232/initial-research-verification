@@ -120,9 +120,10 @@ python train.py precompute
 ```
 
 ### オプション
-
+```
 --root   元の音声データのディレクトリ（デフォルト: ./train_dataset）
 --out    precompute 結果の保存先（デフォルト: ./precomputed/train）
+```
 
 ### 実行例
 

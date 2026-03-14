@@ -97,3 +97,37 @@ tmux a -t 0
 ```bash
 exit
 ```
+
+## train.py の使い方
+
+`train.py` は以下の 3 つのモードを持つ。
+
+- `precompute` : 音声データから特徴量を事前計算して保存する
+- `train` : precompute 済みデータを使って学習する
+- `evaluate` : 学習済みモデルで評価を行う
+
+## 1. precompute(事前処理)
+
+### 目的
+
+音声データのメルスペクトログラムを事前に計算し、`.npy` と `metadata.csv` として保存する。  
+学習時に毎回特徴量を計算しないため、学習を高速に進められる。
+
+### 実行
+
+```bash
+python train.py precompute
+```
+
+### オプション
+
+--root   元の音声データのディレクトリ（デフォルト: ./train_dataset）
+--out    precompute 結果の保存先（デフォルト: ./precomputed/train）
+
+### 実行例
+
+```
+python train.py precompute \
+  --root ./train_dataset \
+  --out ./precomputed/train
+```
